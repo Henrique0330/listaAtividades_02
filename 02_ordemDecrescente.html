@@ -1,11 +1,35 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
     Faça um script que leia três números e mostre-os em ordem decrescente.
     */
+   const N1 = Number(prompt("Me diga um número (Número 1)"));
+   const N2 = Number(prompt("Me diga outro número (Número 2)"));
+   const N3= Number(prompt("Me diga mais um número (Número 3)"));
 
     //ENTRADA
+   if(!isNaN (N1) && !isNaN (N2) && !isNaN (N3)) {
 
+   if(N1 == N2 || N2 == N3 || N1 == N3) {
+    alert(`Os números não podem ser iguais!`);
+   }
+   else if (N1 > N2 && N2 > N3) {
+    alert(`${N1}, ${N2}, ${N3}`);
+   }
+   else if (N2 > N1 && N1 > N3){
+    alert(`${N2}, ${N1}, ${N3}`);
+   }
+   else if (N3 > N2 && N2 > N1){
+    alert(`${N3}, ${N2}, ${N1}`)
+   }
+   else if (N1 > N3 && N3 > N2){
+    alert(`${N1}, ${N3}, ${N2} `)
+   }
+
+    } else{
+        alert(`Informe apenas números!`);
+    }
     
     //PROCESSAMENTO
     
