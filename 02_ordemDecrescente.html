@@ -9,12 +9,16 @@
    const N3= Number(prompt("Me diga mais um número (Número 3)"));
 
     //ENTRADA
-   if(!isNaN (N1) && !isNaN (N2) && !isNaN (N3)) {
+   
+    if(!isNaN (N1) && !isNaN (N2) && !isNaN (N3)) {
 
    if(N1 == N2 || N2 == N3 || N1 == N3) {
     alert(`Os números não podem ser iguais!`);
    }
-   else if (N1 > N2 && N2 > N3) {
+   
+    //PROCESSAMENTO
+    
+    else if (N1 > N2 && N2 > N3) {
     alert(`${N1}, ${N2}, ${N3}`);
    }
    else if (N2 > N1 && N1 > N3){
@@ -26,13 +30,14 @@
    else if (N1 > N3 && N3 > N2){
     alert(`${N1}, ${N3}, ${N2} `)
    }
+   else if (N3 > N1 && N1 > N2){
+    alert(`${N3}, ${N1}, ${N2} `)
+   }
+    
+   //SAÍDA
 
-    } else{
+   } else{
         alert(`Informe apenas números!`);
     }
-    
-    //PROCESSAMENTO
-    
-    //SAÍDA
     
 </script>
