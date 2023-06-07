@@ -13,8 +13,42 @@
 
     //ENTRADA
 
-    //PROCESSAMENTO
+    const P1 = prompt("Telefonou para a vítima?");
+    const P2 = prompt("Esteve no local do crime?");
+    const P3 = prompt("Mora perto da vítima?");
+    const P4 = prompt("Devia para a vítima?");
+    const P5 = prompt("Já trabalhou com a vítima?");
 
+    //PROCESSAMENTO
+    let pontos = 0;
+    if (P1 == "sim") {
+        pontos = pontos + 1;
+    }
+    if (P2 == "sim") {
+        pontos = pontos + 1;
+    }
+    if (P3 == "sim") {
+        pontos = pontos + 1;
+    }
+    if (P4 == "sim") {
+        pontos = pontos + 1;
+    }
+    if (P5 == "sim") {
+        pontos = pontos + 1;
+    }
+    
+    if (pontos <= 1) {
+        alert(`Inocente!`);
+    }
+    else if (pontos == 2) {
+        alert(`Suspeito!`);
+    }
+    else if (pontos = 3 || 4){
+        alert(`Cúmplice`)
+    }
+    else if (pontos == 5){
+        alert(`Assasino`)
+    }
     //SAÍDA
 
 </script>
