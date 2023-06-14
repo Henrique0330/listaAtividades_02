@@ -15,11 +15,25 @@
     */
 
     //ENTRADA
-
+    const litros = Number(prompt("Me diga quantos litros foram vendidos?")).tolowercase()
+    const combustivel = prompt("Qual foi o tipo de combustível (A-álcool, G-gasolina)");
 
     //PROCESSAMENTO
+    if (combustivel == "gasolina" || combustivel == "g") {
 
-    
+    }
+    else if (combustivel == "álcool" || combustivel == "a") {
+        if (litros <= 20) {
+            20 * 6.10 - 0.03
+        alert(`${litros} Esse será o preço do álcool com o desconto de 3%`)}
+        
+        else if (litros > 20) {
+            20 * 6.10 - 0.05
+            alert(`${litros} Esse será o preço do álcool com o desconto de 5%`)}
+    }
+
+
+
     //SAÍDA
 
 
