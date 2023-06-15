@@ -10,10 +10,25 @@
 
     // Entrada
 
-    
+    const nota = Number(prompt("Insira sua nota"))
+
     // Processamento
 
-    
+    if (nota >= 9 && nota <= 10) {
+        alert(`O conceito será A`);
+    }
+    else if (nota >= 8 && nota < 9) {
+        alert(`O conceito será B`);
+    }
+    else if (nota >= 7 && nota < 8) {
+        alert(`O conceito será C`);
+    }
+    else if (nota >= 6 && nota < 7) {
+        alert(`O conceito será D`);
+    }
+    else if (nota < 6 && nota >= 0) {
+        alert(`O conceito será E`);
+    }
     // Saída
 
 </script>

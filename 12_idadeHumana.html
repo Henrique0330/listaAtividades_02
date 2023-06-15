@@ -8,10 +8,23 @@
 
     // Entrada
 
-    
-    // Processamento
+    const dog = prompt("Insira o porte do seu cachorro (P para pequeno, M para medio, G para grande)").toUpperCase()
+    const idade = Number(prompt("Insira a idade do seu cachorro"))
+    let idadeHumana = 0;
 
-    
+    // Processamento
+    if (dog === 'P') {
+        idadeHumana = idade * 5;
+    }
+    else if (dog === 'M'){
+        idadeHumana = idade * 6
+    }
+    else if (dog === 'G'){
+        idadeHumana = idade * 7
+   }
+
+
     // Saída
 
+    alert(`${idadeHumana}, Essa será a idade do seu cachorro em forma humana`)
 </script>
