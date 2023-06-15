@@ -8,9 +8,17 @@
 
     //ENTRADA
 
+    const N1 = Number(prompt("Me diga um número, inteiro ou decimal").replace(",", "."))
 
     //PROCESSAMENTO
 
+    if(!Number.isInteger(N1)){
+alert(`Este número é decimal`)
+
+    }
+    else{
+alert(`Este número é inteiro`)
+    }
     
     //SAÍDA
 
