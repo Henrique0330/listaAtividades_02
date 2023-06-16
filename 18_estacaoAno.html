@@ -8,14 +8,44 @@
 
     //ENTRADA
    
-    const hemi = prompt("Me diga em qual hemisfério você está")
-    const mes = prompt("Me diga em qual mês você está")
+    const hemis = prompt("Insira o hemisfério que você se encontra:").toLowerCase().trim();
+    const mes = prompt("Insira em qual mês você está:").toLowerCase().trim();
 
     //PROCESSAMENTO
-if(){
-    
+if (hemis == "sul" || hemis == "s") {
+    if (mes == "janeiro" || mes == "fevereiro" || mes == "março" || mes == "marco") {
+        alert(`Você está no verão.`)
+    }
+    else if (mes == "abril" || mes == "maio" || mes == "junho") {
+        alert(`Você está no outono`)
+    }
+    else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+        alert(`Você está no inverno`)
+    }
+    else if (mes == "outubro" || mes== "novembro" || mes == "dezembro") {
+        alert(`Você está na primavera.`)
+    }
+    else {
+        alert(`dados inválidos`);
+    }
 }
-    
+if (hemis == "norte" || hemis == "n") {
+    if (mes == "janeiro" || mes == "fevereiro" || mes == "março" || mes == "marco") {
+        alert(`Você está no inverno.`)
+    }
+    else if (mes == "abril" || mes == "maio" || mes == "junho") {
+        alert(`Você está na primavera`)
+    }
+    else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+        alert(`Você está no verão`)
+    }
+    else if (mes == "outubro" || mes== "novembro" || mes == "dezembro") {
+        alert(`Você está no outono.`)
+    }
+    else {
+        alert(`dados inválidos`);
+    }
+}
 
     //SAÍDA
 
